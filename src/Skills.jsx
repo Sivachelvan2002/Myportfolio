@@ -48,7 +48,7 @@ function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-gray-800 hover:bg-gray-700 hover:scale-105 transform transition-all duration-300 p-6 rounded-2xl shadow-md flex flex-col items-center space-y-3"
+              className="bg-gray-800 hover:bg-gray-700 hover:scale-105 border-2 border-fuchsia-900/40 transform transition-all duration-300 p-6 rounded-2xl shadow-md flex flex-col items-center space-y-3 "
             >
               <div>{skill.icon}</div>
               <div className="text-white font-medium text-lg">{skill.title}</div>

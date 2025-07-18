@@ -68,23 +68,24 @@ function Hero() {
                 </div>
 
                 {/* Right image/avatar placeholder */}
-                <div className="flex justify-center lg:justify-end relative order-1 md:order-2 ">
-                    {/* Optional overlay image */}
-                    <div className="rounded   absolute md:top-2 md:right-2 z-40 ">
+                <div className="flex justify-center items-center  order-1 md:order-2 relative ">
+                    <div className="bg-gradient-to-r border-2 border-b-grey-600 from-blue-500/10 to-grey-500/30 w-80 md:w-96 h-80 md:-h-96 rounded-2xl flex justify-center items-cente animate-spin absolute top-0 z-0"></div>
+
+                    <div className="rounded-full   hover:animate-ping ">
                         <img
                             src="sel.jpg"
                             alt="Srimaheswaralingam Sivachelvan"
-                            className=" object-cover rounded-full h-80 md:h-90 w-80 md:w-90"
+                            className=" object-cover rounded-full h-80 md:h-90 w-80 md:w-90 z-40 "
                         />
                     </div>
+                    {/* Optional overlay image */}
+                    
 
                     {/* Spinning border circle */}
-                    <div className="animate-spin shadow-2xl shadow-blue-950 ">
-                        <div className="w-80 h-80 md:w-94 md:h-94 rounded-full bg-gradient-to-t from-gray-500 to-purple-500  p-4">
-                            {/* Optional: center content goes here */}
-                        </div>
+                   
+                        
 
-                    </div>
+                   
 
                 </div>
 
@@ -98,7 +99,7 @@ function Hero() {
 
         </section>
 
-  
+   
 
 
         </>
