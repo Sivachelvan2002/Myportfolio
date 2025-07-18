@@ -1,10 +1,12 @@
 import React from "react";
 import './App.css';
+import Typewriter from 'typewriter-effect';
 
 
 function Hero() {
     return (
-        <section className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-950 to-black text-white relative overflow-hidden py-2 md:py-3 px-4 md:px-8">
+        <>
+            <section className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-950 to-black text-white relative overflow-hidden py-2 md:py-3 px-4 md:px-8">
             {/* Background circles */}
             <div className="absolute top-24 left-4 w-64 h-64 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/30 blur-3xl animate-spin-slow" />
             <div className="absolute bottom-24 right-24 w-80 h-80 rounded-full bg-gradient-to-r from-purple-500/30 to-pink-500/10 blur-3xl animate-spin-slow-reverse" />
@@ -16,20 +18,25 @@ function Hero() {
                         👋 Hello, I'm
                     </span>
 
-                    <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-center">
-                        <span className="block text-white text-3xl ">Srimaheswaralingam</span>
+                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight ">
+                        <span className="block text-white  ">Srimaheswaralingam</span>
                         <span className="block bg-gradient-to-r from-blue-400 via-purple-400/60 to-pink-400 bg-clip-text text-transparent">
                             Sivachelvan
                         </span>
                     </h1>
 
-                    <h2 className="text-2xl text-gray-200 font-light">
-                        Frontend Developer & UI Designer
+                    <h2 className="text-2xl text-grey-300 font-semibold">
+                        <Typewriter
+                            options={{
+                                strings: ['Frontend Developer', 'UI Designer'],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        /> 
                     </h2>
 
                     <p className="max-w-2xl text-gray-400/90 leading-relaxed text-lg">
-                        I craft beautiful, responsive web experiences with modern technologies. Passionate about clean code,
-                        intuitive design, and bringing creative ideas to life through pixel-perfect interfaces.
+                       I'm Srimaheswaralingam Sivachelvan, a passionate Frontend Developer & UI Designer based in jaffna. I specialize in building high-performance, responsive web apps using React.js, Tailwind CSS, and modern JavaScript. I turn complex problems into elegant solutions through clean code, accessible UI, and fast user experiences.
                     </p>
 
                     {/* Skills */}
@@ -73,12 +80,12 @@ function Hero() {
 
                     {/* Spinning border circle */}
                     <div className="animate-spin shadow-2xl shadow-blue-950 ">
-                         <div className="w-80 h-80 md:w-94 md:h-94 rounded-full bg-gradient-to-t from-gray-500 to-purple-500  p-4">
-                        {/* Optional: center content goes here */}
-                    </div>
+                        <div className="w-80 h-80 md:w-94 md:h-94 rounded-full bg-gradient-to-t from-gray-500 to-purple-500  p-4">
+                            {/* Optional: center content goes here */}
+                        </div>
 
                     </div>
-                   
+
                 </div>
 
             </div>
@@ -90,6 +97,14 @@ function Hero() {
 
 
         </section>
+
+  
+
+
+        </>
+       
+
+
     );
 }
 
