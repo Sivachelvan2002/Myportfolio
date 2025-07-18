@@ -4,10 +4,10 @@ function about() {
     return (
         <div>
             <section id="about" className=" bg-gradient-to-br from-gray-700 via-gray-950 to-black text-white py-20 px-6 md:px-12">
-                <div className="container mx-auto grid md:grid-cols-2 items-center gap-1">
+                <div className=" mx-auto grid md:flex flex-row  justify-between items-center ">
 
                     {/* Profile Image */}
-                    <div className="group p-[3px] rounded-2xl bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400 w-64 h-64 md:w-80 md:h-90 shadow-xl hover:shadow-2xl transition-all duration-500 ">
+                    <div className="group p-[3px] rounded-2xl bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400 w-64 h-64 md:w-80 md:h-90 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:translate-x-4 hover:translate-y-4 hover:translate-z-4 ">
                         <div className="w-full h-full rounded-2xl overflow-hidden bg-black">
                             <img
                                 src="sel.jpg"
@@ -21,7 +21,7 @@ function about() {
 
 
                     {/* About Content */}
-                    <div className="space-y-5 text-center md:text-left h-64 md:h-90 rounded-2xl overflow-hidden border-4 border-purple-600 shadow-lg p-4">
+                    <div className="space-y-5 gap-0 text-center md:text-left h-64 md:h-90 w-auto md:w-3/5 rounded-2xl overflow-hidden border-4 border-purple-600 shadow-lg p-4 md:px-8 transform hover:-translate-x-5 hover:-translate-y-5 hover:translate-z-5 transition-all duration-500">
                         <h2 className="text-3xl md:text-6xl font-bold text-white">
                             About <span className="text-purple-700">Me</span>
                         </h2>
