@@ -1,4 +1,16 @@
+import { ToastContainer, toast } from 'react-toastify';
 export default function ContactSection() {
+ const notify = () => toast.success('Your messege received succesfully', {
+position: "top-center",
+autoClose: 10000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "dark",
+});
+
   return (
     <section className="py-12 md:py-24 lg:py-32 bg-gradient-to-br from-gray-700 via-gray-950 to-black text-gray-100 flex flex-col justify-center items-center">
       <div className="container px-4 md:px-6">
@@ -19,7 +31,7 @@ export default function ContactSection() {
                 id="full-name"
                 className="flex h-10 w-full rounded-md border border-gray-700 bg-gray-800 px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-gray-700 bg-gray-800 ring-offset-gray-900 placeholder:text-gray-400 focus-visible:ring-gray-300"
                 placeholder="selvan sri"
-                type="text"
+                type="text" 
               />
             </div>
             <div className="grid gap-2 hover:animate-pulse">
@@ -33,7 +45,7 @@ export default function ContactSection() {
                 id="email"
                 className="flex h-10 w-full rounded-md border border-gray-700 bg-gray-800 px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-gray-700 bg-gray-800 ring-offset-gray-900 placeholder:text-gray-400 focus-visible:ring-gray-300"
                 placeholder="selvan2002@gmail.com"
-                type="email"
+                type="email"  
               />
             </div>
             <div className="grid gap-2 hover:animate-pulse">
@@ -44,12 +56,13 @@ export default function ContactSection() {
                 Message
               </label>
               <textarea
+              
                 id="message"
                 className="flex min-h-[80px] w-full rounded-md border border-gray-700 bg-gray-800 px-3 py-2 text-sm ring-offset-white placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-gray-700 bg-gray-800 ring-offset-gray-900 placeholder:text-gray-400 focus-visible:ring-gray-300"
                 placeholder="Your message here..."
               ></textarea>
             </div>
-            <button
+            <button onClick={notify}
               type="submit"
               className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 bg-gray-50 text-gray-900 hover:bg-gray-200 focus-visible:ring-gray-300"
             >
@@ -58,6 +71,19 @@ export default function ContactSection() {
           </form>
         </div>
       </div>
+      <ToastContainer
+position="top-center"
+autoClose={10000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+
+/>
     </section>
   )
 }

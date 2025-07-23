@@ -6,6 +6,7 @@ import About from './about.jsx'
 import Skills from './Skills.jsx'
 import ProjectsSection from './Projects.jsx'
 import ContactSection from './Contact.jsx'
+import FooterSection from './Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
     <Skills />
     <ProjectsSection />
     <ContactSection />
+    <FooterSection />
     </StrictMode>
 )
