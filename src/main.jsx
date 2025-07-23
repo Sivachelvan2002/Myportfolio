@@ -7,9 +7,12 @@ import Skills from './Skills.jsx'
 import ProjectsSection from './Projects.jsx'
 import ContactSection from './Contact.jsx'
 import FooterSection from './Footer.jsx'
+import NavBar from './Nav.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <NavBar />
     <Hero />
     <About />
     <Skills />

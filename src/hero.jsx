@@ -71,7 +71,7 @@ function Hero() {
                 <div className="flex justify-center items-center  order-1 md:order-2 relative ">
                     <div className="bg-gradient-to-r border-2 border-b-grey-600 from-blue-500/10 to-grey-500/30 w-80 md:w-96 h-80 md:-h-96 rounded-2xl flex justify-center items-cente animate-spin absolute top-0 z-0"></div>
 
-                    <div className="rounded-full   hover:animate-ping ">
+                    <div className="rounded-full  ">
                         <img
                             src="sel.jpg"
                             alt="Srimaheswaralingam Sivachelvan"
