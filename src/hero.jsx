@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 function Hero() {
     return (
         <>
-            <section className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-950 to-black text-white relative overflow-hidden py-2 md:py-3 px-4 md:px-8">
+            <section id="home" className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-950 to-black text-white relative overflow-hidden py-2 md:py-3 px-4 md:px-8">
             {/* Background circles */}
             <div className="absolute top-24 left-4 w-64 h-64 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/30 blur-3xl animate-spin-slow" />
             <div className="absolute bottom-24 right-24 w-80 h-80 rounded-full bg-gradient-to-r from-purple-500/30 to-pink-500/10 blur-3xl animate-spin-slow-reverse" />
@@ -18,9 +18,9 @@ function Hero() {
                         👋 Hello, I'm
                     </span>
 
-                    <h1 className="text-4xl md:text-5xl font-extrabold leading-tight ">
-                        <span className="block text-white  ">Srimaheswaralingam</span>
-                        <span className="block bg-gradient-to-r from-blue-400 via-purple-400/60 to-pink-400 bg-clip-text text-transparent">
+                    <h1 className=" font-extrabold leading-tight ">
+                        <span className="block text-white text-3xl md:text-5xl ">Srimaheswaralingam</span>
+                        <span className="block text-4xl md:text-5xl bg-gradient-to-r from-blue-400 via-purple-400/60 to-pink-400 bg-clip-text text-transparent">
                             Sivachelvan
                         </span>
                     </h1>
@@ -69,7 +69,7 @@ function Hero() {
 
                 {/* Right image/avatar placeholder */}
                 <div className="flex justify-center items-center  order-1 md:order-2 relative ">
-                    <div className="bg-gradient-to-r border-2 border-b-grey-600 from-blue-500/10 to-grey-500/30 w-80 md:w-96 h-80 md:-h-96 rounded-2xl flex justify-center items-cente animate-spin absolute top-0 z-0"></div>
+                    <div className="bg-gradient-to-r border-2 border-b-grey-600 from-blue-500/10 to-grey-500/30 w-80 md:w-96 h-80 md:-h-96 rounded-2xl flex justify-center items-center animate-spin absolute top-0 z-0 "></div>
 
                     <div className="rounded-full  ">
                         <img

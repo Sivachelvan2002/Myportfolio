@@ -12,16 +12,19 @@ export default function FooterSection() {
 
         {/* Navigation Links */}
         <nav className="flex flex-col items-center md:flex-row md:space-x-6 space-y-2 md:space-y-0">
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#home" className="hover:text-white transition-colors">
             Home
           </a>
-          <a href="#" className="hover:text-white transition-colors">
-            Projects
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#about" className="hover:text-white transition-colors">
             About
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#skills" className="hover:text-white transition-colors">
+            Skills
+          </a>
+          <a href="#projects" className="hover:text-white transition-colors">
+            My projects
+          </a>
+          <a href="#contact" className="hover:text-white transition-colors">
             Contact
           </a>
         </nav>

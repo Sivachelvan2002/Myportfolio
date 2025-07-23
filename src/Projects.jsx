@@ -2,9 +2,9 @@ import React from "react";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-700 via-gray-950 to-black">
+    <section id="projects" className="py-7 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-700 via-gray-950 to-black">
       <div className="max-w-6xl mx-auto ">
-        <h2 className="text-4xl font-bold text-center mb-12 text-amber-50">My Projects</h2>
+        <h2 className="text-5xl font-bold text-center mb-12 text-amber-50">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
           {/* Project 1 */}

@@ -12,8 +12,8 @@ theme: "dark",
 });
 
   return (
-    <section className="py-12 md:py-24 lg:py-32 bg-gradient-to-br from-gray-700 via-gray-950 to-black text-gray-100 flex flex-col justify-center items-center">
-      <div className="container px-4 md:px-6">
+    <section id='contact' className="py-12 md:py-12 lg:py-12 bg-gradient-to-br from-gray-700 via-gray-950 to-black text-gray-100 flex flex-col justify-center items-center">
+      <div className="container px-4 md:px-6 md:pb-6">
         <div className="max-w-2xl mx-auto text-center space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
           <p className="text-gray-300 md:text-xl">I’m a passionate learner looking to grow — open to conversations, feedback, or small collaborations.</p>

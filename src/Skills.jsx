@@ -32,15 +32,15 @@ function About() {
 
   return (
     <section
-      id="about"
-      className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-20 px-6 md:px-16 text-white"
+      id="skills"
+      className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-4 px-6 md:px-16 text-white"
     >
       <div className="max-w-5xl mx-auto text-center space-y-2">
-        <h2 className="text-3xl md:text-6xl font-bold tracking-tight ">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight ">
          Skills
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-4 pb-14">
           {skills.map((skill, index) => (
             <motion.div
               key={index}

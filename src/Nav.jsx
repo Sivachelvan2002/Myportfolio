@@ -13,11 +13,12 @@ export default function NavBar() {
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex space-x-8">
-            <a href="#home" className="hover:text-yellow-400 transition-colors duration-200">Home</a>
-            <a href="#about" className="hover:text-yellow-400 transition-colors duration-200">About</a>
-            <a href="#services" className="hover:text-yellow-400 transition-colors duration-200">Services</a>
-            <a href="#contact" className="hover:text-yellow-400 transition-colors duration-200">Contact</a>
+          <div className="hidden md:flex space-x-8 text-xl">
+            <a href="#home" className="hover:text-fuchsia-600 transition-colors duration-200">Home</a>
+            <a href="#about" className="hover:text-fuchsia-600 transition-colors duration-200">About</a>
+            <a href="#skills" className="hover:text-fuchsia-600 transition-colors duration-200">Skills</a>
+            <a href="#projects" className="hover:text-fuchsia-600 transition-colors duration-200">My projects</a>
+            <a href="#contact" className="hover:text-fuchsia-600 transition-colors duration-200">Contact</a>
           </div>
 
           {/* Mobile menu button */}
@@ -56,10 +57,11 @@ export default function NavBar() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-900 bg-opacity-90 px-4 py-3 space-y-3">
-          <a href="#home" className="block hover:text-yellow-400 transition-colors duration-200">Home</a>
-          <a href="#about" className="block hover:text-yellow-400 transition-colors duration-200">About</a>
-          <a href="#services" className="block hover:text-yellow-400 transition-colors duration-200">Services</a>
-          <a href="#contact" className="block hover:text-yellow-400 transition-colors duration-200">Contact</a>
+          <a href="#home" className="block hover:text-fuchsia-600 transition-colors duration-200">Home</a>
+          <a href="#about" className="block hover:text-fuchsia-600 transition-colors duration-200">About</a>
+          <a href="#skills" className="block hover:text-fuchsia-600 transition-colors duration-200">Skills</a>
+          <a href="#projects" className="block hover:text-fuchsia-600 transition-colors duration-200">My projects</a>
+          <a href="#contact" className="block hover:text-fuchsia-600 transition-colors duration-200">Contact</a>
         </div>
       )}
     </nav>
