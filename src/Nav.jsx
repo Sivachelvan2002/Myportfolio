@@ -4,7 +4,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-br from-gray-700 via-gray-950 to-black text-gray-100">
+    <nav className="bg-gradient-to-br from-gray-700 via-gray-950 to-black text-gray-100 border-b-[1px] border-b-blue-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-24 items-center">
           {/* Logo / Brand */}

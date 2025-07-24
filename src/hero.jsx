@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 function Hero() {
     return (
         <>
-            <section id="home" className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-950 to-black text-white relative overflow-hidden py-2 md:py-3 px-4 md:px-8">
+            <section id="home" className="min-h-screen bg-gradient-to-br from-gray-700 via-gray-950 to-black text-white relative overflow-hidden py-2 md:py-3 px-4 md:px-8 ">
             {/* Background circles */}
             <div className="absolute top-24 left-4 w-64 h-64 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/30 blur-3xl animate-spin-slow" />
             <div className="absolute bottom-24 right-24 w-80 h-80 rounded-full bg-gradient-to-r from-purple-500/30 to-pink-500/10 blur-3xl animate-spin-slow-reverse" />
